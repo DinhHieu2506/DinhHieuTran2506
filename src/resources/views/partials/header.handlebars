@@ -1,0 +1,61 @@
+{{#if isAdmin}}
+				<header id="header" class="alt">
+						<h1><a href="/">News</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/admin/">Trang chủ</a></li>
+								<li><a href="/auth/login">Login</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h1>Bài viết</h1>
+							
+						</div>
+					</section>
+{{else}}
+<header id="header" class="alt">
+						<h1><a href="/">News</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/">Trang chủ</a></li>
+								<li><a href="/create">Tạo bài viết </a></li>
+								<li><a href="/posts/wall">Bài viết của tôi</a></li>
+								<li><a href="/auth/register">Register</a></li>
+								<li><a href="/auth/login">Login</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h1>Bài viết</h1>
+							
+						</div>
+					</section>
+
+{{/if}}

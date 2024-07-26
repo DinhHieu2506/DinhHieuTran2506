@@ -1,0 +1,53 @@
+<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				{{#each postsAdmin}}
+						<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="posts/{{_id}}" class="image"><img src="{{image}}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">{{title}}</h2>
+										<p>{{content}}</p>
+										<a href="/postdetails" class="special">Learn more</a>
+                                         <a href="posts/update/{{_id}}"><button type="submit" class="btn btn-secondary">Cập nhật</button></a>
+										 <a href="posts/dele/{{_id}}"><button type="submit" class="btn btn-secondary">Xoá</button></a>
+									</div>
+								</div>
+							</section>
+							{{/each}}
+
+						<!-- Two -->
+					
+
+					
+
+						<!-- Four -->
+						
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Các bài viết khác</h2>
+									<section class="features">
+										{{#each postsAdmin}}
+										<article>
+											<a href="" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">{{title}}</h3>
+											<p>{{content}}</p>
+											<a href="/postdetails" class="special">Learn more</a>
+										</article>
+										{{/each}}
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+					</section>
+			
+
+			
+			</div>
+
+		
+	</body>
